@@ -121,3 +121,71 @@ https://mikrodat.ujbuda.hu/app/cms/api/honlap/inv/test?id=8ba08f48-4373-11ef-a7e
 - nev
 ---
 
+## 3) Napirendi pont  
+
+`A napirendi pontok apija nem egységes, míg a testületi napirendi pontokhoz elég a testület mappa UUID, 
+addig a bizottság már bizottság mappa UUID-t és bizottság UUID-t is kér`
+
+### Testület
+> inv/listtest?id=[testület_UUID]  
+https://mikrodat.ujbuda.hu/app/cms/api/honlap/inv/listtest?id=8ba08f48-4373-11ef-a7ed-e70a27390546
+
+- gyujto
+- nyilvanossagjelolo
+- hasPermissions
+- folapra
+- eloterjeszto
+- targy
+- name
+- napirend
+- uuid **<--Testület napirend UUID**
+- linkName
+- referencia
+
+### Bizottság
+
+>inv/list?id=[bizottság mappa UUID]id2=[bizottság UUID]  
+https://mikrodat.ujbuda.hu/app/cms/api/honlap/inv/list?id=5417b7af-2fae-11ef-a7ed-e70a27390546&id2=545b0250-2fae-11ef-a7ed-e70a27390546
+
+- gyujto
+- nyilvanossagjelolo
+- hasPermissions
+- folapra
+- eloterjeszto
+- targy
+- name
+- napirend
+- uuid **<--Bizottság napirend UUID**
+- linkName
+- referencia
+
+---
+## 4) Döntési / határozati javaslatok dokumentumai (pdf)
+
+>/elo/djav/uuid=[meghívó uuid]&uuid2=[napirendi pont uuid]  
+https://mikrodat.ujbuda.hu/app/cms/api/honlap/elo/djav?uuid=8ba08f48-4373-11ef-a7ed-e70a27390546&uuid2=25ac459d-4d89-11ef-a077-e70a27390546
+
+- gyujto
+- nyilvanossagjelolo
+- dateLastModified
+- statetext
+- name **<---dokumentum név**
+- userLastModified
+- filesize
+- uuid **<---dokumentum UUID**
+
+---
+## 5) Előterjesztés mellékletek dokumentumai (pdf)
+
+> elo/att/uuid=[meghívó UUID]&uuid2=[napirendi pont UUID]  
+https://mikrodat.ujbuda.hu/app/cms/api/honlap/elo/att?uuid=8ba08f48-4373-11ef-a7ed-e70a27390546&uuid2=25ac459d-4d89-11ef-a077-e70a27390546
+
+- gyujto
+- nyilvanossagjelolo
+- dateLastModified
+- statetext
+- name **<---dokumentum név**
+- userLastModified
+- filesize
+- uuid **<---dokumentum UUID**
+
