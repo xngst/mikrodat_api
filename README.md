@@ -1,6 +1,28 @@
-## 1) Mappák
+Az önkormányzatban van egy képviselőtestület [test] (az összes képviselő részt vesz benne),  
+és több bizottság [biz] (csak azok vesznek részt akik tagjai a bizottságnak).  
 
-A mappák a Mikrodat által használt logikát tükrözik:
+A testületnek és a bizottságnak is vannak üléseik [folder].   
+Ezek lehetnek előre meghirdetett időpontok (rendes), vagy sürgős ülések (rendkívüli).   
+Van időpontjuk, helyszínük.  
+Az testületi / bizottsági ülés előtt X nappal ki kell küldeni a meghívót [inv].   
+Ebben szerepelnek a napirendi pontok, a döntési javaslatok (amikről megy majd a szavazás),   
+és az előterjesztések kapcsolódó dokumentumai (háttéranyagok).  
+
+Az ülés napján ezt földolgozzák, megszavazzák, és készül a jegyzőkönyv.  
+A sikeresen megszavazott előterjesztésekből pedig határozatok lesznek.  
+
+- Képviselőtestületi / bizottsági ülés
+    - meghívó
+    - jegyzőkönyv
+    - napirendi pont
+        - döntési javaslat / előterjesztés
+            - melléklet
+            - szavazás
+                - határozat
+
+## Mappák
+
+A mappák a MikroDat által használt logikát tükrözik:
 
 
 - **Meghívók**  
@@ -62,7 +84,7 @@ https://mikrodat.ujbuda.hu/app/cms/api/honlap/jegy/folders?year=2024
 - uuid **<-- jegyzőkönyv mappa UUID**
 - nev
 
-## 2 ) Meghívók
+## Meghívók
 
 #### `Minden meghívót mappa UUID azonosít`
 ---
@@ -121,7 +143,7 @@ https://mikrodat.ujbuda.hu/app/cms/api/honlap/inv/test?id=8ba08f48-4373-11ef-a7e
 - nev
 ---
 
-## 3) Napirendi pont  
+## Napirendi pont  
 
 `A napirendi pontok apija nem egységes, míg a testületi napirendi pontokhoz elég a testület mappa UUID, 
 addig a bizottság már bizottság mappa UUID-t és bizottság UUID-t is kér`
@@ -160,7 +182,7 @@ https://mikrodat.ujbuda.hu/app/cms/api/honlap/inv/list?id=5417b7af-2fae-11ef-a7e
 - referencia
 
 ---
-## 4) Döntési / határozati javaslatok dokumentumai (pdf)
+## Döntési / határozati javaslatok dokumentumai (pdf)
 
 >/elo/djav/uuid=[meghívó uuid]&uuid2=[napirendi pont uuid]  
 https://mikrodat.ujbuda.hu/app/cms/api/honlap/elo/djav?uuid=8ba08f48-4373-11ef-a7ed-e70a27390546&uuid2=25ac459d-4d89-11ef-a077-e70a27390546
@@ -175,7 +197,7 @@ https://mikrodat.ujbuda.hu/app/cms/api/honlap/elo/djav?uuid=8ba08f48-4373-11ef-a
 - uuid **<---dokumentum UUID**
 
 ---
-## 5) Előterjesztés mellékletek dokumentumai (pdf)
+## Előterjesztés mellékletek dokumentumai (pdf)
 
 > elo/att/uuid=[meghívó UUID]&uuid2=[napirendi pont UUID]  
 https://mikrodat.ujbuda.hu/app/cms/api/honlap/elo/att?uuid=8ba08f48-4373-11ef-a7ed-e70a27390546&uuid2=25ac459d-4d89-11ef-a077-e70a27390546
@@ -189,3 +211,8 @@ https://mikrodat.ujbuda.hu/app/cms/api/honlap/elo/att?uuid=8ba08f48-4373-11ef-a7
 - filesize
 - uuid **<---dokumentum UUID**
 
+## Jegyzőkönyvek
+# TODO
+
+## Határozatok
+# TODO
