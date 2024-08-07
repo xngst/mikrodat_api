@@ -1,3 +1,5 @@
+[<img src="https://github.com/xngst/mikrodat_api/blob/main/demo/imgs/frontend_demo1.png/">](https://github.com/xngst/mikrodat_api/blob/main/demo/imgs/frontend_demo1.png/)
+
 Az önkormányzatban van egy képviselőtestület [test] (az összes képviselő részt vesz benne),  
 és több bizottság [biz] (csak azok vesznek részt akik tagjai a bizottságnak).  
 
