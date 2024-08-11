@@ -97,7 +97,7 @@ https://mikrodat.ujbuda.hu/app/cms/api/honlap/jegy/folders?year=2024
 
 #### Meghívó részletek (detail)
 > /**detail**?id=[folder_UUID]  
-https://mikrodat.ujbuda.hu/app/cms/api/honlap/detail?id=3dd07e6f-2885-11ef-a7ed-e70a27390546
+https://mikrodat.ujbuda.hu/app/cms/api/honlap/detail?id=57ddebcc-532d-11ef-90f5-e70a27390546
 
 
 * datum
@@ -121,7 +121,7 @@ https://mikrodat.ujbuda.hu/app/cms/api/honlap/detail?id=3dd07e6f-2885-11ef-a7ed-
 
 #### Bizottsági  (biz)
 > /inv/**biz**?id=[folder_UUID]  
-https://mikrodat.ujbuda.hu/app/cms/api/honlap/inv/biz?id=a57cdad5-4a65-11ef-a077-e70a27390546
+https://mikrodat.ujbuda.hu/app/cms/api/honlap/inv/biz?id=57ddebcc-532d-11ef-90f5-e70a27390546
 
 - datum
 - nyilvanossagjelolo
@@ -134,7 +134,7 @@ https://mikrodat.ujbuda.hu/app/cms/api/honlap/inv/biz?id=a57cdad5-4a65-11ef-a077
 
 #### Testületi (test)
 > /inv/**test**?id=[folder_UUID]  
-https://mikrodat.ujbuda.hu/app/cms/api/honlap/inv/test?id=8ba08f48-4373-11ef-a7ed-e70a27390546
+https://mikrodat.ujbuda.hu/app/cms/api/honlap/inv/test?id=da444474-532f-11ef-90f5-e70a27390546
 
 - datum
 - nyilvanossagjelolo
@@ -152,7 +152,7 @@ addig a bizottság már bizottság mappa UUID-t és bizottság UUID-t is kér`
 
 ### Testület
 > inv/listtest?id=[testület_UUID]  
-https://mikrodat.ujbuda.hu/app/cms/api/honlap/inv/listtest?id=8ba08f48-4373-11ef-a7ed-e70a27390546
+https://mikrodat.ujbuda.hu/app/cms/api/honlap/inv/listtest?id=da444474-532f-11ef-90f5-e70a27390546
 
 - gyujto
 - nyilvanossagjelolo
@@ -169,7 +169,7 @@ https://mikrodat.ujbuda.hu/app/cms/api/honlap/inv/listtest?id=8ba08f48-4373-11ef
 ### Bizottság
 
 >inv/list?id=[bizottság mappa UUID]id2=[bizottság UUID]  
-https://mikrodat.ujbuda.hu/app/cms/api/honlap/inv/list?id=5417b7af-2fae-11ef-a7ed-e70a27390546&id2=545b0250-2fae-11ef-a7ed-e70a27390546
+https://mikrodat.ujbuda.hu/app/cms/api/honlap/inv/list?id=9f8a1672-532f-11ef-90f5-e70a27390546&id2=9f9f4c2e-532f-11ef-90f5-e70a27390546
 
 - gyujto
 - nyilvanossagjelolo
@@ -187,7 +187,7 @@ https://mikrodat.ujbuda.hu/app/cms/api/honlap/inv/list?id=5417b7af-2fae-11ef-a7e
 ## Döntési / határozati javaslatok dokumentumai (pdf)
 
 >/elo/djav/uuid=[meghívó uuid]&uuid2=[napirendi pont uuid]  
-https://mikrodat.ujbuda.hu/app/cms/api/honlap/elo/djav?uuid=8ba08f48-4373-11ef-a7ed-e70a27390546&uuid2=25ac459d-4d89-11ef-a077-e70a27390546
+https://mikrodat.ujbuda.hu/app/cms/api/honlap/elo/djav?uuid=9f8a1672-532f-11ef-90f5-e70a27390546&uuid2=a5bb7a34-532f-11ef-90f5-e70a27390546
 
 - gyujto
 - nyilvanossagjelolo
@@ -202,7 +202,7 @@ https://mikrodat.ujbuda.hu/app/cms/api/honlap/elo/djav?uuid=8ba08f48-4373-11ef-a
 ## Előterjesztés mellékletek dokumentumai (pdf)
 
 > elo/att/uuid=[meghívó UUID]&uuid2=[napirendi pont UUID]  
-https://mikrodat.ujbuda.hu/app/cms/api/honlap/elo/att?uuid=8ba08f48-4373-11ef-a7ed-e70a27390546&uuid2=25ac459d-4d89-11ef-a077-e70a27390546
+https://mikrodat.ujbuda.hu/app/cms/api/honlap/elo/att?uuid=9f8a1672-532f-11ef-90f5-e70a27390546&uuid2=a5bb7a34-532f-11ef-90f5-e70a27390546
 
 - gyujto
 - nyilvanossagjelolo
